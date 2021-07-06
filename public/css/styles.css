@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f2ef;
+}
+
+.center {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#box {
+  padding: 20px 40px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  height: max-content;
+  max-width: max-content;
+  background-color: #fff;
+}
+
+#tasks li {
+  font-size: 1.2rem;
+  word-break: break-word;
+}

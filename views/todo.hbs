@@ -3,22 +3,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body{ font-family: sans-serif; }
-    </style>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
   </head>
   <body>
-    <form action="/" method="POST">
-      <input type="text" name="todo" id="todos" placeholder="Add todo" />
-      <input type="submit" />
-    </form>
-
-    <h1>Todos</h1>
-    <ul>
-      {{#each todos}}
-        <li>{{this}}</li>
-      {{/each}}
-    </ul>
+    <div id="box">
+      <h2 class="center">Task Manager</h2>
+      <form action="/" method="POST">
+        <input type="text" name="todo" id="todos" placeholder="Add task" />
+        <button type="submit" id="todoSubmit">Add</button>
+      </form>
+      <h2>Tasks</h2>
+      <div id="tasks">
+        <ul>
+          {{#each todos}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/scripts.js"></script>
   </body>
 </html>
